@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Message1 from './components/hw1/message1';
+import Message2 from './components/hw1/message2';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Message1 info="Всем привет"/>
+      <Message1 info="На улице светит Солнце"/>
+      <Message2 info1="Идем купаться на море" />
+      <Message2 info1="Море сегодня спокойное" />
     </div>
   );
 }
